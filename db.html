@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Conexión a Base de Datos</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        pre { background: #f4f4f4; padding: 10px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h1>Conexión a Base de Datos (Simulación)</h1>
+    <p>Este sería el código PHP para conectarse a la base de datos MySQL:</p>
+    <pre>
+&lt;?php
+$host = "localhost";
+$usuario = "root";
+$contrasena = "";
+$base_datos = "sise";
+
+$conexion = new mysqli($host, $usuario, $contrasena, $base_datos);
+
+if ($conexion-&gt;connect_error) {
+    die("Conexión fallida: " . $conexion-&gt;connect_error);
+}
+?&gt;
+    </pre>
+
+    <p>⚠️ Recuerda que este código solo funciona con PHP. En HTML puro no puedes conectarte a una base de datos.</p>
+
+    <a href="index.html">Volver al listado</a>
+</body>
+</html>
